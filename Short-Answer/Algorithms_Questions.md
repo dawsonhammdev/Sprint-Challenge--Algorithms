@@ -9,6 +9,7 @@ pseudocode with respect to the input size n of each of the following:
 a)  a = 0
     while (a < n * n * n):
       a = a + n * n
+# this would be linear because the time it takes for this to run willvary dependening on the value of a.  If a is large then it will take longer.
 ```
 
 
@@ -20,6 +21,7 @@ b)  sum = 0
         j *= 2
         sum += 1
 ```
+# the run time for this would be quadratic due to the nested loops.
 
 ```
 c)  def bunnyEars(bunnies):
@@ -27,6 +29,7 @@ c)  def bunnyEars(bunnies):
         return 0
 
       return 2 + bunnyEars(bunnies-1)
+# The run time for this would be constant because the operation time would always be the same even depending on the value of bunnies.
 ```
 
 ## Exercise II
