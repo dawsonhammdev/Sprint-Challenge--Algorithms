@@ -96,8 +96,17 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-        # Fill this out
-        pass
+        # need to pick up the first number
+ 
+        # compare the number it's holding with ht one infront of it.
+    
+        # if the number being help is less than then turn light off
+        if swap_item(self) < compare_item():
+            set_light_on(l[0])
+            move_right(l[0])
+        # now move to the right and swap again
+
+        
 
 
 if __name__ == "__main__":
