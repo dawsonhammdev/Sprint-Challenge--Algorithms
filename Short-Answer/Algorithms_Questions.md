@@ -10,6 +10,7 @@ a)  a = 0
     while (a < n * n * n):
       a = a + n * n
 # this would be linear because the time it takes for this to run willvary dependening on the value of a.  If a is large then it will take longer.
+# divide n^3 by n^2 = n
 ```
 
 
@@ -22,14 +23,14 @@ b)  sum = 0
         sum += 1
 ```
 # the run time for this would be quadratic due to the nested loops.
-
+# o(n) compared to O(logn) j increases in half the time. O(n log n)
 ```
 c)  def bunnyEars(bunnies):
       if bunnies == 0:
         return 0
 
       return 2 + bunnyEars(bunnies-1)
-# The run time for this would be constant because the operation time would always be the same even depending on the value of bunnies.
+# minusing the input by 1 in the recursion, so it's running from 0 to bunnies (or n). LINEAR
 ```
 
 ## Exercise II
@@ -53,6 +54,8 @@ Write out your proposed algorithm in plain English or pseudocode AND give the ru
 # 100 floors for example it could take  up to 33 eggs.
 
 # Time complexity would be O(n2) or quadratic, because there is a case of overlapping sub-problems the time complexity is exponential.  It isn't contstant because the time would vary on the amount of floors.
+
+# O(log n)
 
 
 

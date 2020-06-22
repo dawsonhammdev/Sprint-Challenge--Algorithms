@@ -96,15 +96,49 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-        # need to pick up the first number
- 
-        # compare the number it's holding with ht one infront of it.
-    
-        # if the number being help is less than then turn light off
-        if swap_item(self) < compare_item():
-            set_light_on(l[0])
-            move_right(l[0])
-        # now move to the right and swap again
+        self.light_is_on()
+        # while robot's light is on...
+
+        
+        
+        while self.light_is_on():
+            self.set_light_off()
+            
+            # 1st process:
+            # pickup first item, the first spot now is None
+            if self.compare_item() == -1:
+                self.swap_item()
+                self.set_light_off()
+            if self.can_move_right():
+                self.move_right()
+            else:
+                while self.can_move_left():
+                    self.move_left()
+
+            # robot now goes through each item to the right in the list
+
+            # and compares to see if any item is smaller than the item he is holding
+            # if an item is smaller than the one he is holding, swap the two
+
+            # when he cannot go right anymore, he should be holding the smallest number
+            # now he must turn around and go left to find the spot that is empty/None
+            # replace the spot with None with the number he is holding(smallest value)
+
+            # 2nd process:
+            # if robot can go right, skip one to the right and start there
+            # repeat 1st process
+
+            # 3rd process:
+
+            # when the robot cannot skip to the right anymore
+            # put the item he is holding back in the spot with None
+            # and turn off his light
+
+
+                
+            
+
+
 
         
 
