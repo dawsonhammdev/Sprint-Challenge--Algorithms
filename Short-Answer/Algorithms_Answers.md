@@ -12,4 +12,12 @@ c) This will be Exponential, O(c^n), because as the size of the input increases 
 
 ## Exercise II
 
+- I would like to use the binary search to utilize the 'halfing' concept to find the highest floor that can be dropped from without breaking.  
 
+- First I would create and store variables such as 'top' 'mid' and 'bottom'.  
+
+- I would begin every simulation by finding the 'mid' and I could so that by adding the 'top' and 'bottom' and // 2.
+
+-  Once the 'mid' is found I would then drop the egg from the 'mid'.  If the egg broke I know I would need to go down floors.  So I woould make the 'mid' = top and 'bottom' would stay the same and I would calculate the 'mid' recursively and run the entire fall and move recursivley until we find the point where the egg did not break right below the final floor.
+
+- The run time for this solutions would be Logarithmic, O(log n).
